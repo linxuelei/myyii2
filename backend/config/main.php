@@ -13,7 +13,8 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
-        'request' => [
+        'db'=>require(__DIR__. '/db.php'),
+	'request' => [
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
