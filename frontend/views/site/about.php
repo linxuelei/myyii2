@@ -12,5 +12,5 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>关于6</p>
 
-    <code><?= __FILE__ ?></code>
+    <code></code>
 </div>
