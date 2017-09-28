@@ -37,9 +37,9 @@ class Country extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'name' => 'Name',
-            'population' => 'population',
+            'id' => '序号',
+            'name' => '名称',
+            'population' => '人口数',
         ];
     }
 }

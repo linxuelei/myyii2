@@ -8,6 +8,7 @@ use frontend\models\CountrySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\data\Pagination;
 
 /**
  * CountryController implements the CRUD actions for Country model.
@@ -37,6 +38,18 @@ class CountryController extends Controller
     {
         $searchModel = new CountrySearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+
+        /*$query = static::find();
+        $pagination = new Pagination([
+            'defaultPageSize' => 5,
+            'totalCount' => $query->count(),
+        ]);
+        $news = $query->orderBy('id')
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();*/
+
 
         return $this->render('index', [
             'searchModel' => $searchModel,
