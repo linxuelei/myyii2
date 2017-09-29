@@ -1,7 +1,7 @@
 <?php
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=201709', // MySQL, MariaDB
+    'dsn' => 'mysql:host=192.168.2.113;dbname=201709', // MySQL, MariaDB
     //'dsn' => 'sqlite:/path/to/database/file', // SQLite
     //'dsn' => 'pgsql:host=localhost;port=5432;dbname=mydatabase', // PostgreSQL
     //'dsn' => 'cubrid:dbname=demodb;host=localhost;port=33000', // CUBRID
